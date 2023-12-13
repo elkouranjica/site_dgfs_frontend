@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Preface(props) {
     return (
-        <div className="p-16 px-32 justify-between bg-green bg-opacity-10 grid grid-cols-2 gap-32">
+        <div className="p-24 px-32 justify-between bg-green bg-opacity-10 grid grid-cols-2 gap-32">
             <div className="flex flex-col justify-center gap-8 " data-aos="fade-down">
                 <h2 className="text-4xl font-bold text-green">
                     Initiative de la "Caravane Médicale" au sein de la Direction Générale de Fourniture de Soins.

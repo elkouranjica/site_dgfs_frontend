@@ -3,7 +3,7 @@ import {Calendar, icons, AppWindow, Video} from "lucide-react";
 
 function Intro(props) {
     return (
-        <section className="p-16 px-32 grid grid-cols-4 gap-9">
+        <section className="p-24 px-32 grid grid-cols-4 gap-9">
             <div className="p-6 bg-green text-white gap-6 flex flex-col rounded-lg">
                 <h2 className="text-lg font-bold">Explorez notre site !</h2>
 

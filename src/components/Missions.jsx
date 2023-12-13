@@ -2,8 +2,8 @@ import React from 'react';
 
 function Missions(props) {
     return (
-        <div className="p-12 px-32 flex flex-col gap-6">
-            <h1 className="text-green border-b-2 border-red text-xl font-bold w-max py-2" data-aos="fade-down">
+        <div className="p-24 px-32 flex flex-col gap-12">
+            <h1 className="text-green border-b-2 border-red text-4xl font-bold w-max py-2" data-aos="fade-down">
                 Missions et Attributions
             </h1>
 
@@ -16,7 +16,7 @@ function Missions(props) {
                 au niveau communautaire. Elle est tenue de :
             </p>
 
-            <div className="grid grid-cols-2 gap-12 py-12 ">
+            <div className="grid grid-cols-2 gap-12">
                 <Mission
                     data-aos="fade-left"
                     title={"Mettre en place la Couverture Sanitaire Universelle (CSU) "}
@@ -24,31 +24,31 @@ function Missions(props) {
                         "disponibilité des offres de soins accessibles à tous, en temps opportun et à\n" +
                         "l'emplacement souhaité, tout en étant efficaces, sécurisées, intégrées et axées sur la\n" +
                         "personne, tout en garantissant l'accès à des médicaments de qualité sans imposer de\n" +
-                        "contraintes financières à la population ;"}
+                        "contraintes financières à la population"}
                 />
                 <Mission
                     data-aos="fade-right"
                     title={"Elaborer des cadres juridiques "}
                     text={"propices au développement des Formation Sanitaires, et\n" +
                         "instaurer un environnement de travail rassurant et épanouissant pour tous les acteurs\n" +
-                        "de la santé ;"}
+                        "de la santé"}
                 />
                 <Mission
                     title={"Etablir des partenariats "}
                     text={"en collaboration avec les Directions rattachées en vue d'établir\n" +
-                        "un système de soins résilient et de mettre en œuvre la PDSS ;"}
+                        "un système de soins résilient et de mettre en œuvre la PDSS"}
                     data-aos="fade-left"
                 />
                 <Mission
                     data-aos="fade-right"
-                    title={"Amélioration de l’offre de soins de qualité pour tous ;"}
+                    title={"Amélioration de l’offre de soins de qualité pour tous"}
                 />
 
                 <Mission
                     data-aos="fade-right"
                     title={"Assurer la coordination,"}
                     text={"l’animation, le suivi et évaluations des activités des directions\n" +
-                        "et services rattachés ;"}
+                        "et services rattachés"}
                 />
 
                 <Mission
@@ -62,7 +62,7 @@ function Missions(props) {
                     data-aos="fade-right"
                     title={"Contribuer à l’amélioration de la qualité "}
                     text={"des soins dans les CHU, à l’humanisation\n" +
-                        "des soins "}
+                        "des soins"}
                 />
 
                 <Mission
@@ -73,7 +73,7 @@ function Missions(props) {
 
                 <Mission
                     data-aos="fade-right"
-                    title={"Développer le partenariat public privé au niveau des CHU ;"}
+                    title={"Développer le partenariat public privé au niveau des CHU"}
                 />
 
                 <Mission
