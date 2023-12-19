@@ -22,10 +22,10 @@ function Header(props) {
                            alt={"mg gov"}/>
                 </div>
                 <div className="text-white flex flex-col gap-12 items-center max-w-5xl">
-                    <h1 className="font-bold text-5xl"> Direction Générale de Fourniture des Soins </h1>
+                    <h1 className="font-bold text-5xl text-center"> Direction Générale de Fourniture des Soins </h1>
                     <div className="text-2xl font-semibold w-2/3 inline-flex italic">
                         <span className="scale-x-[-1]"><Quote/></span>
-                        <span>Garantir un accès équitable aux soins de santé de qualité pour tous les citoyens Malgaches.</span>
+                        <span>Garantir un accès équitable aux soins de santé de qualité pour tous les citoyens Malagasy.</span>
                         <span className="self-end"><Quote/></span></div>
                 </div>
             </div>

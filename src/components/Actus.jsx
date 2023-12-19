@@ -6,7 +6,7 @@ import {ArrowRight} from "lucide-react";
 
 async function Actus(props) {
 
-    const data = await (await fetch("http://localhost:8000/api/post")).json();
+    const data = await (await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/post`)).json();
 
     return (
         <div id="actu" className="p-24 px-32 flex flex-col gap-12">

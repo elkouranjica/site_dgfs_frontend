@@ -4,7 +4,7 @@ import {formatDate} from "@/utils/date";
 
 export default async function Page({params}) {
 
-    const data = await (await fetch(`http://localhost:8000/api/post/${params.id}`)).json();
+    const data = await (await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/post/${params.id}`)).json();
 
     console.log(data)
 

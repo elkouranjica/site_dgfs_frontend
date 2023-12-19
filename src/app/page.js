@@ -11,6 +11,7 @@ export default function Home() {
 
   return (
     <>
+        <p>{process.env.CUSTOM_ENV}</p>
         <Header/>
         <Intro/>
         <Preface/>

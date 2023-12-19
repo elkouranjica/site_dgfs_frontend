@@ -46,7 +46,7 @@ function IntroDetails({title, Icon, content , ...props}) {
                 {Icon}
             </div>
             <h2 className="text-green font-bold text-xl">{title}</h2>
-            <div className="text-neutral-500">{content}</div>
+            <div className="text-neutral-500 text-justify">{content}</div>
         </div>
     )
 }

@@ -176,7 +176,7 @@ function Department({id, header, content}) {
             <Accordion.Content asChild>
                 <div
                     className="border-t data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden">
-                    <div className={"py-6 bg-neutral-50"}>
+                    <div className={"p-6 bg-neutral-50"}>
                         {content}
                     </div>
                 </div>

@@ -90,7 +90,7 @@ function Missions(props) {
 
 function Mission({title, text, ...props}) {
     return (
-        <div className="text-neutral-900 p-8 bg-neutral-100 rounded-md" {...props}>
+        <div className="text-neutral-900 p-8 bg-neutral-100 rounded-md text-justify" {...props}>
             <span className="font-bold text-red">{title}</span> {text}
         </div>
     )

@@ -12,7 +12,7 @@ function Navbar(props) {
                 </Link>
 
                 <ul className="flex gap-14 text-base font-semibold text-green items-center cursor-pointer">
-                    <Navitem link={"Acceuil"} href={"/"}/>
+                    <Navitem link={"Accueil"} href={"/"}/>
                     <Navitem link={"CHU"} href={"/chu"}/>
                     <Navitem link={"Actualités"} href={"/#actu"}/>
                     <Link

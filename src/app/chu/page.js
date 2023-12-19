@@ -1,15 +1,8 @@
-"use client"
-
-import AOS from 'aos';
-import {useEffect} from "react";
-import Footer from "@/components/Footer";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
+    const data = (await (await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/etablissement/?limit=30` , { next: { revalidate: 0 }})).json()).results;
 
     return (
         <>
@@ -18,28 +11,27 @@ export default function Home() {
                     Madagascar :</h1>
 
                 <div className="grid grid-cols-4 gap-6">
-                    <ChuCard/>
-                    <ChuCard/>
-                    <ChuCard/>
-                    <ChuCard/>
+                    {
+                        data.map(chu => <ChuCard name={chu.name} image={chu.image || "/assets/hopital.png"} logo={chu.logo || "/assets/MINSAN.jpg"}/>)
+                    }
                 </div>
             </div>
         </>
     )
 }
 
-function ChuCard() {
+function ChuCard({image , name , logo}) {
     return (
         <div className="rounded-lg overflow-hidden cursor-pointer border-2 border-transparent hover:border-green duration-300">
-            <div>
-                <Image width={620} height={330} src={"/assets/hopital.png"} alt={""}/>
+            <div className="h-48 overflow-hidden flex items-center justify-center">
+                <Image width={620} height={330} src={image} alt={""}/>
             </div>
             <div className="flex flex-row-reverse justify-between items-center p-2 bg-neutral-100 gap-6">
-                <div className="w-24">
-                    <Image className="w-full h-auto" width={400} height={380} src={"/assets/chu-logo.png"} alt={""}/>
+                <div className="w-24 flex aspect-square items-center justify-center overflow-hidden bg-white p-3 rounded-xl ">
+                    <Image className="w-auto h-full" width={400} height={380} src={logo} alt={""}/>
                 </div>
                 <div className="text-green font-bold text-base">
-                    CHU JOSEPH RASETA BEFELATANANA
+                    {name}
                 </div>
             </div>
         </div>
