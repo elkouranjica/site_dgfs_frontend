@@ -16,17 +16,17 @@ const nextConfig = {
     },
 
     env: {
-        NEXT_PUBLIC_API_URL: "http://localhost:8000",
+        NEXT_PUBLIC_API_URL: "178.159.5.244:8000",
     },
 
     output: 'standalone',
 
     images: {
 
-        domains : ["localhost"],
+        domains : ["dgfs.mg"],
         remotePatterns: [
             {
-                protocol: 'http',
+                protocol: 'https',
                 hostname: '**',
                 port: '',
                 pathname: '**',
