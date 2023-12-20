@@ -5,13 +5,13 @@ import {formatDate} from "@/utils/date";
 
 async function Actus(props) {
 
-    const data = await (await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/post`)).json();
+    const data = await (await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/post/`)).json();
 
     return (
         <div id="actu" className="p-12 px-32 pt-0 flex flex-col  my-12">
             <div className="flex justify-between items-center">
                 <h1 className="text-green text-4xl font-bold w-max">
-                    Les actualités du DGFS
+                    Les actualités de la Direction Générale de Fourniture des Soins
                 </h1>
             </div>
 
